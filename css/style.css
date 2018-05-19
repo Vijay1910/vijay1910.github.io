@@ -1,0 +1,992 @@
+/* 
+------------------
+Template Name: Valentina Template
+Author: Themepoo
+Author Email: themepoo.cit@gmail.com
+Version: 1.00
+----------------
+
+----------------
+Table of Content
+----------------
+1.Navbar Part
+2.Banner Part
+3.History Part
+4.Gift and Proposal Part 
+5.Ticket Part
+6.Offer & Sevice Part
+7.Gallery Part
+8.Counter Part
+8.Proposal Part
+8.Footer Part
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+img {
+    border: 0;
+}
+body{
+    position: relative;
+}
+/*== preloader css ==*/
+.preloader{
+   position: fixed;
+    z-index: 999999;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    
+}
+.preloader img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*===================== Navbar CSS ===================================*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    transition: all linear .3s;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0 20px;
+    transition: all linear .3s;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link::after,
+.navbar-light .navbar-nav .nav-link.active::after{
+	position: absolute;
+	content: '';
+	bottom: -35px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/hover-img.png);
+	background-repeat: no-repeat;
+	background-position: center;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+
+ .navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active
+{
+    color: #d50a51;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after,
+.navbar-light .navbar-nav .nav-link.active::after
+{
+	color: #d50a51;
+    opacity: 1;
+    bottom: -25px;
+}
+.navbar-light .navbar-nav .active .nav-link:after{
+    opacity: 1;
+    bottom: -25px;
+}
+.navbar-right .btn-primary {
+	color: #d50a51;
+	background-color: transparent;
+	border-color: #d50a51;
+    cursor: pointer;
+    position: relative;
+    transition: all linear .3s;
+    z-index: 1;
+}
+.navbar-right .btn-primary:hover {
+    background: #d50a51;
+    color: #fff;
+    
+}
+.navbar-right .btn-primary.focus, .btn-primary:focus {
+	box-shadow: none;
+}
+.navbar-right .btn {
+	padding: 8px 20px;
+	font-size: 20px;
+	border-radius: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navcss{
+    background-color: #fbdfe6;
+   
+}
+/*======================
+    Banner Part CSS 
+==============*/
+#banner {
+    background: url(../images/banner.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0
+}
+.banner-img {
+    padding-top: 135px;
+}
+.banner-text {
+    padding-top: 220px;
+    padding-bottom: 125px;
+}
+.banner-text h3 {
+    color: #8a5e3b;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: -28px;
+}
+.banner-text h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+    color: #d50a51;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.banner-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 26px;
+    padding-bottom: 45px;
+}
+.banner-text a {
+    border: 1px solid #d50a51;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: #d50a51;
+    text-decoration: none;
+    transition: all linear .3s;
+}
+.banner-text a:hover {
+    background: #d50a51;
+    color: #fff;
+}
+/*=======================
+    History Part CSS
+=========================*/
+#history {
+    padding-top: 100px;
+}
+.heading {
+    padding-top: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+.heading:after {
+    position: absolute;
+    content: '';
+    width: 86px;
+    height: 78px;
+    top: 0;
+    left: -5px;
+    background: url(../images/love-bg.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.heading h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    color: #444;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+}
+.heading h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    color: #d50a51;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+.history-details p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 26px;
+}
+/*========================
+    Proposal part css
+===========================*/
+#proposal {
+    background: #fff6da;
+    margin-top: 95px;
+    position: relative;
+}
+.proposal-content {
+    padding-top: 50px;
+}
+.heading2 {
+    padding-top: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+.heading2:after {
+    position: absolute;
+    content: '';
+    width: 86px;
+    height: 78px;
+    top: 0;
+    left: -5px;
+    background: url(../images/love-bg2.png);
+    background-repeat: no-repeat;
+}
+.heading2 h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    color: #444;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+}
+.heading2 h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    color: #d50a51;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+.proposal-details p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 26px;
+}
+.button {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.button a {
+    border: 1px solid #d50a51;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: #d50a51;
+    text-decoration: none;
+    transition: all linear .3s;
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+.button a:hover {
+    background: #d50a51;
+    color: #fff;
+}
+.gift-img img {
+    position: absolute;
+    top: -110px;
+    right: 0;
+    height: 650px;
+    width: 520px;
+}
+/*=========================
+    Ticket part css
+========================*/
+#ticket {
+    padding-top: 100px;
+}
+.heading3 {
+    padding-top: 20px;
+    padding-right: 50px;
+    position: relative;
+    text-align: right
+}
+.heading3:after {
+    position: absolute;
+    content: '';
+    width: 86px;
+    height: 78px;
+    top: 0;
+    right: 0;
+    background: url(../images/love-bg3.png);
+    background-repeat: no-repeat;
+}
+.heading3 h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    color: #444;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+}
+.heading3 h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    color: #d50a51;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+.letter img {
+    margin-top: 50px;
+}
+.ticket-details p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    line-height: 26px;
+}
+.button2 {
+    padding-bottom: 0;
+}
+.button2 a {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+/*===================
+    Offer Part CSS
+======================*/
+#offer {
+    margin-top: 100px;
+    background: #fef7fa;
+    padding-top: 55px;
+}
+.heading4 {
+    padding-top: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+.heading4:after {
+    position: absolute;
+    content: '';
+    width: 86px;
+    height: 78px;
+    top: 0;
+    left: -5px;
+    background: url(../images/love-bg4.png);
+    background-repeat: no-repeat;
+}
+.heading4 h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    color: #444;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+}
+.heading4 h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    color: #d50a51;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+.offer-details p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    line-height: 26px;
+}
+.service-main {
+    margin-bottom: 30px;
+}
+.service-item {
+    padding: 0px 25px;
+    border-right: 3px solid transparent;
+    transition: all linear .3s;
+}
+.service-name span {
+    vertical-align: -20px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 5px;
+    margin-left:20px;
+    color: #d50a51;
+    text-transform: capitalize;
+}
+.service-name {
+    padding-top: 20px;
+}
+.service-details {
+    padding-bottom: 25px;
+} 
+.service-details p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    line-height: 24px;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.service-item:hover{
+    background: #f1f1f1;
+    border-color: #d50a51;
+    -webkit-box-shadow: 0px 0px 6px 1px rgb(183, 177, 183);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(183,177,183,1);
+    box-shadow: 0px 0px 6px 1px rgba(183,177,183,1);
+}
+/*=================
+    Gallery part css
+=====================*/
+#gallery {
+    padding-top: 100px;
+}
+.gallery-img {
+    position: relative;
+    margin-bottom: 30px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: all linear .3s;
+    transform: scale(0)
+}
+.gallery-img:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+.social {
+    position: absolute;
+    right: 0;
+}
+.social a {
+    text-decoration: none;
+}
+.social i {
+    display: block;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear .3s;
+}
+.social i:hover {
+    background: #d50a51;
+    border-color: #d50a51
+}
+.social-engagment {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.social-engagment h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+.social-engagment p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+}
+.social-engagment i {
+    margin-left: 12px;
+    margin-right: 2px;
+}
+.button3 a {
+    margin-right: 0;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+.images-item {
+    display: none;
+}
+.navbar-light .navbar-toggler {
+	background: tranparent;
+    cursor: pointer;
+}
+/*==================
+    Counter part css
+======================*/
+#counter {
+    background: url(../images/counter-bg.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 40px;
+}
+#countdown h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #d50a51;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+#countdown h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 32px;
+    color: #444;
+}
+#days, #minutes {
+    margin-top: 20px;
+}
+#hours, #seconds {
+    margin-top: 40px;
+}
+/*=====================
+    feedback part css
+======================*/
+#feedback {
+    padding-top: 100px;
+    position: relative;
+}
+.feedback-slide {
+    position: relative;
+}
+.feedback-slide:after {
+    position: absolute;
+    content: '';
+    height: 70px;
+    width: 70px;
+    top: -40px;
+    left: -25px;
+    background: url(../images/feed-love.png);
+    background-repeat: no-repeat;
+}
+.feedback-slide:before {
+    position: absolute;
+    content: '';
+    height: 70px;
+    width: 70px;
+    bottom: -25px;
+    right: -24px;
+    transform: rotate(180deg);
+    background: url(../images/feed-love.png);
+    background-repeat: no-repeat;
+}
+#feedback i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d50a51;
+    border-radius: 50%;
+    color: #d50a51;
+    text-align: center;
+    line-height: 40px;
+}
+#feedback .left {
+    position:absolute;
+    left: 50px;
+    top: 60%;
+}
+#feedback .right {
+    position:absolute;
+    right: 50px;
+    top: 60%;
+}
+.client-feedback{
+    background: #fffae2;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+.client-feedback p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 26px;
+}
+.client-feedback ul li {
+    float: left;
+    padding-right: 20px;
+}
+.client-info {
+    margin-top: 30px;
+}
+.client-info h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: #222;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.client-info h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #444;
+    text-transform: capitalize;
+}
+/*======================
+    Footer part css
+=========================*/
+#news11 {
+    margin-bottom: -150px;
+    margin-top: 100px;
+}
+#footer {
+    padding-top: 100px;
+}
+.newsletter {
+    width: 100%;
+    background: #d50a51;
+    border-radius: 65px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.newsletter input::placeholder {
+  color: #fff;
+}
+.news ul {
+    margin: 0;
+}
+.news ul li {
+    float: left;
+}
+.news ul li h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.news ul li p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+.news ul li i {
+    font-size: 50px;
+    margin-top: 8px;
+    margin-right: 7px;
+    color: #fff;
+}
+.name {
+    margin-top: 15px;
+    position: relative;
+}
+.name .form-control {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 0;
+}
+.name button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border-color: transparent;
+}
+.name button i {
+    color: #fff;
+    border-left: 1px solid #fff;
+    line-height: 34px;
+    width: 34px;
+}
+button:focus {
+	outline:none;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+.heading5 {
+    padding-bottom: 30px;
+}
+.footer-bg {
+    background: url(../images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.footer-bg .heading {
+    padding-bottom: 15px;
+}
+.footer-item ul li p {
+    margin: 0;
+}
+.footer-item ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #444;
+    text-decoration: none;
+    margin-left: 20px;
+    line-height: 26px;
+}
+.footer-item ul li {
+    float: left;
+}
+.footer-item ul li i{
+    width: 50px;
+    height: 50px;
+    background: #d50a51;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 24px;
+}
+.follow {
+    padding-top: 60px;
+}
+.follow h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #d50a51;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.follow i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d50a51;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #d50a51;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: all linear .3s;
+}
+.follow a {
+    text-decoration: none;
+}
+.follow i:hover {
+    background: #d50a51;
+    color: #fff;
+}
+#footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fffae2;
+}
+#footer-bottom p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444444;
+}
+#footer-bottom a {
+    text-decoration: none;
+    color: #d50a51;
+}
+.back-top-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    transition: all .5s;
+}
+.back-top-btn i {
+    width: 50px;
+    height: 50px;
+    background: #d50a51;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+/*======================
+    modal css
+======================*/
+/* join party popup */
+.modal-content {
+    border-radius: 0;
+    overflow: hidden;
+}
+.modal-header i {
+	position: absolute;
+	top: -8px;
+	right: -5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #d50a51;
+    border-radius: 50%;
+    font-weight: 400;
+    color: #fff;
+    text-align: center
+}
+.modal-header {
+	border-bottom:none;
+}
+.modal-dialog {
+    max-width: 1024px!important;
+}
+.close {
+    opacity: 1;
+    display: 
+}
+.form-control {
+	font-style: italic;
+    border-radius: 0;
+}
+.form-control:focus {
+    border-color: #fccddd;
+}
+.submit-join {
+    padding-bottom: 30px;
+}
+.submit-join button {
+	background: none;
+	border-radius: 25px;
+	color: #d50a51;
+	border-color: #d50a51;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    transition: all linear .3s;
+    font-weight: 700;
+}
+.submit-join .btn-secondary:hover {
+	color: #fff;
+	background-color: #d50a51;
+	border-color: #d50a51;
+}
+.submit-join .btn-secondary.focus, .btn-secondary:focus {
+	box-shadow: none;
+}
+/* donate poppup */
+#exampleModal2 .submit-join {
+    text-align: center;
+}
+#exampleModal2 .modal-header i {
+	text-align: center;
+}
+#exampleModal2 .modal-body .heading,
+#exampleModal3 .modal-body .heading,
+#exampleModal3 .modal-body .heading h2,
+#exampleModal2 .modal-body .heading h2 {
+    padding-bottom: 0;
+    font-size: 24px!important;
+    text-align: left;
+}
+#exampleModal4 .modal-body .heading,
+#exampleModal4 .modal-body .heading h2{
+    text-align: center!important;
+    padding-bottom: 0;
+    font-size: 24px!important;
+}
+#exampleModal4 .modal-body .heading span,
+#exampleModal3 .modal-body .heading span,
+#exampleModal2 .heading span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px!important;
+    color: #777777;
+    font-style: italic;
+}
+#exampleModal2 .modal-body .heading3 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.modal-header a{
+    border-color: transparent;
+    padding: 0
+}.modal-header a:hover{
+    background-color:transparent
+}
+#exampleModal4 i {
+    text-align: center
+}
+#exampleModal4 .modal-body .heading3,
+#exampleModal3 .modal-body .heading3 {
+    padding-bottom: 20px;
+}
+.submit-join2 {
+    border-bottom: 1px dashed #d50a51;
+    padding-bottom: 50px;
+}
+.checkbox, .radio {
+	position: relative;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.brand-name label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444444;
+}
+.brand-name li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.brand-name li label {
+	position: relative;
+	padding-left: 5px;
+}
+.checkbox label::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 2px;
+	top: 5px;
+	margin-left: -20px;
+	border: 1px solid #444444;
+	border-radius: 3px;
+	background-color: #fff;
+	-webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+	-o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+	transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+	border-color: #d50a51;
+    background: #d50a51;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+	color: #fff;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+	font-family: 'FontAwesome';
+	content: "\f00c";
+	font-size: 16px;
+	position: absolute;
+	top: 0px;
+	left: -18px;
+}
+#exampleModal3 .modal-header i {
+	position: absolute;
+	top: -8px;
+	right: -5px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #d50a51;
+	border-radius: 50%;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+}
